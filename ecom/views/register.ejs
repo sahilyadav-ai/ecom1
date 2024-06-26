@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../stylesheets/register.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <form method="post" action="/register">
+                <h2 class="register">Register</h2>
+                <p id="passwordError"></p>
+                <input type="text" placeholder="Username" autocomplete="username" name="username">
+                <input type="password" minlength="8" id="password" placeholder="Password" autocomplete="password" name="password" ">
+               
+                
+                 <input type="email" name="email" placeholder="email">
+                 
+                <button class="tombol-register" type="submit" id="registerButton">Register</button>
+            </form>
+            <div class="switch">
+                <h5>Already have account?</h5>
+                <a href="/login">Login</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

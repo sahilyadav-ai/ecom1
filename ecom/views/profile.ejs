@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="../stylesheets/profile.css">
+<script src="../javascripts/profile.js"></script>
+<body>
+    <form action="/img" method="post"> 
+        <label for="file-input">
+        <input id="file-input" type="file"/>
+        <img id="img-preview" onload="showToast()" src="https://images.unsplash.com/photo-1620163280053-68782bd98475?q=80&w=2865&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+        <p>Click the Image to Upload</p>
+      </label>
+    </form>
+     
+       
+      <div id="toast">Image Uploaded</div>
+
+      <div>Username:<%= userdata.username  %></div>
+      <div>Email:<%= userdata.email%></div>
+</body>
+</html>
